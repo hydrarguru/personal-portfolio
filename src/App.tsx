@@ -39,9 +39,7 @@ function App() {
             </div>
             <div className="text-md my-7 hidden max-w-2xl flex-col space-y-2 rounded text-foreground/70 md:flex">
               <p>
-                <span className="font-semibold text-primary/90">
-                  Frontend:{" "}
-                </span>
+                <span className="font-semibold text-primary/90">Frontend: </span>
                 React.js, Next.js, Vue.js, TailwindCSS.
               </p>
 
@@ -51,16 +49,12 @@ function App() {
               </p>
 
               <p>
-                <span className="font-semibold text-primary/90">
-                  Languages:{" "}
-                </span>
+                <span className="font-semibold text-primary/90">Languages: </span>
                 JavaScript/TypeScript, C#, C++, SQL, HTML & CSS.
               </p>
 
               <p>
-                <span className="font-semibold text-primary/90">
-                  Game Engines:{" "}
-                </span>
+                <span className="font-semibold text-primary/90">Game Engines: </span>
                 Unity Engine, Unreal Engine.
               </p>
 
@@ -70,9 +64,7 @@ function App() {
               </p>
 
               <p>
-                <span className="font-semibold text-primary/90">
-                  Agile methods:{" "}
-                </span>
+                <span className="font-semibold text-primary/90">Agile methods: </span>
                 Scrum, Kanban.
               </p>
             </div>
