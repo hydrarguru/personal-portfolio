@@ -1,6 +1,9 @@
-import IconButton from "./components/IconButton";
-import LinkButton from "./components/LinkButton";
+import IconButton from "./components/buttons/IconButton";
+import LinkButton from "./components/buttons/LinkButton";
 import NavbarMenu from "./components/NavigationMenu";
+import ProjectTab from "./components/tabs/ProjectTab";
+import ExperienceTab from "./components/tabs/ExperienceTab";
+import EducationTab from "./components/tabs/EducationTab";
 
 function App() {
   return (
@@ -71,8 +74,11 @@ function App() {
           </section>
         </div>
         <div className="relative mx-auto mt-3 w-full max-w-4xl p-2 md:p-8 lg:mt-0 lg:h-full lg:w-3/5 lg:overflow-y-scroll">
-          <NavbarMenu projects={<div>Projects</div>} experience={<div>Experience</div>} education={<div>Education</div>
-          } />
+          <NavbarMenu
+            projects={<ProjectTab />}
+            experience={<ExperienceTab />}
+            education={<EducationTab />}
+            />
         </div>
       </div>
     </main>
