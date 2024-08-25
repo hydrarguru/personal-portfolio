@@ -9,7 +9,7 @@ type NavbarMenuProps = {
 function NavbarMenu({ projects, experience, education }: NavbarMenuProps) {
   return (
     <div className="sticky top-0 z-50 inline-flex items-center rounded-lg text-md">
-      <Tabs defaultValue="projects" className="w-[800px]">
+      <Tabs defaultValue="projects" className="w-[600px]">
         <TabsList className="grid w-full grid-cols-3">
           <TabsTrigger value="projects">Projects</TabsTrigger>
           <TabsTrigger value="experience">Experience</TabsTrigger>
