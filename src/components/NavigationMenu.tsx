@@ -1,12 +1,12 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 type NavbarMenuProps = {
-    projects: React.ReactNode;
-    experience: React.ReactNode;
-    education: React.ReactNode;
+    projectSection: React.ReactNode;
+    experienceSection: React.ReactNode;
+    educationSection: React.ReactNode;
 };
 
-function NavbarMenu({ projects, experience, education }: NavbarMenuProps) {
+function NavbarMenu({ projectSection, experienceSection, educationSection }: NavbarMenuProps) {
   return (
     <div className="sticky top-0 z-50">
       <div className="container pr-4 pl-4">
@@ -17,19 +17,18 @@ function NavbarMenu({ projects, experience, education }: NavbarMenuProps) {
             <TabsTrigger value="education">Education</TabsTrigger>
           </TabsList>
           <TabsContent value="projects">
-            {projects}
+            {projectSection}
           </TabsContent>
           <TabsContent value="experience">
-            {experience}
+            {experienceSection}
           </TabsContent>
           <TabsContent value="education">
-            {education}
+            {educationSection}
           </TabsContent>
         </Tabs>
       </div>
     </div>
   );
 }
-//container mx-auto
-//lg:w-[780px] md:
+
 export default NavbarMenu;
