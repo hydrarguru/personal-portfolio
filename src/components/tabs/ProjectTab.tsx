@@ -3,7 +3,7 @@ import { projects } from "@/assets/projects";
 
 function ProjectTab() {
   return (
-    <section className="w-full space-y-6 mt-5">
+    <section className="mt-5 w-full space-y-6">
       {projects.map((project, index) => (
         <ProjectCard
           key={index}

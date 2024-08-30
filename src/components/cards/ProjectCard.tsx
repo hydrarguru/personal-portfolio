@@ -24,13 +24,11 @@ function ProjectCard({
               <h1 className="font-heading text-xl font-semibold">
                 {projectTitle}
               </h1>
-              {
-                /*
+              {/*
                 <span className="rounded bg-secondary px-2 py-1 text-xs">
                   {projectDate}
                 </span> 
-                */
-              }
+                */}
             </div>
           </div>
           <p className="max-w-4xl text-sm text-muted-foreground">
