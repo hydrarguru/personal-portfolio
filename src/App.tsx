@@ -83,9 +83,9 @@ function App() {
         </div>
         <div className="relative mx-auto mt-3 w-full max-w-4xl p-2 md:p-8 lg:mt-0 lg:h-full lg:w-3/5 lg:overflow-y-scroll">
           <NavbarMenu
-            projects={<ProjectTab />}
-            experience={<ExperienceTab />}
-            education={<EducationTab />}
+            projectSection={<ProjectTab />}
+            experienceSection={<ExperienceTab />}
+            educationSection={<EducationTab />}
           />
         </div>
       </div>
