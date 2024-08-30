@@ -31,7 +31,7 @@ function ProjectCard({
                 */}
             </div>
           </div>
-          <p className="max-w-4xl text-sm text-muted-foreground">
+          <p className="max-w-4xl text-md text-muted-foreground">
             {projectDescription}
           </p>
         </a>
