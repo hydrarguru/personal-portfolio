@@ -4,7 +4,6 @@ interface ProjectCardProps {
   projectTitle: string;
   projectDescription: string;
   projectTags: string[];
-  projectDate: string;
   githubLink: string;
   websiteLink: string;
 }
@@ -13,7 +12,6 @@ function ProjectCard({
   projectTitle,
   projectDescription,
   projectTags,
-  projectDate,
   githubLink,
   websiteLink,
 }: ProjectCardProps) {
@@ -26,9 +24,13 @@ function ProjectCard({
               <h1 className="font-heading text-xl font-semibold">
                 {projectTitle}
               </h1>
-              <span className="rounded bg-secondary px-2 py-1 text-xs">
-                {projectDate}
-              </span>
+              {
+                /*
+                <span className="rounded bg-secondary px-2 py-1 text-xs">
+                  {projectDate}
+                </span> 
+                */
+              }
             </div>
           </div>
           <p className="max-w-4xl text-sm text-muted-foreground">

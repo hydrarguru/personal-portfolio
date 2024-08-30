@@ -10,7 +10,6 @@ function ProjectTab() {
           projectTitle={project.projectTitle}
           projectDescription={project.projectDescription}
           projectTags={project.projectTags}
-          projectDate={project.projectDate}
           githubLink={project.githubLink}
           websiteLink={project.websiteLink}
         />
