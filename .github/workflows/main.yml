@@ -22,7 +22,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         local-dir: ./dist/
-        server-dir: public_html/
+        server-dir: henrikengqvist.se/public_html/
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
