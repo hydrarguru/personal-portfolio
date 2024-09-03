@@ -1,4 +1,5 @@
 import IconButton from "../buttons/IconButton";
+import ProjectTag from "./ProjectTag";
 
 interface ProjectCardProps {
   projectTitle: string;
@@ -38,9 +39,7 @@ function ProjectCard({
         {/* Tags */}
         <div className="flex flex-wrap items-center gap-2">
           {projectTags.map((tag) => (
-            <p key={tag} className="rounded bg-secondary px-2 py-1 text-xs">
-              {tag}
-            </p>
+            <ProjectTag key={tag} tagLabel={tag}/>
           ))}
         </div>
 

@@ -11,7 +11,7 @@ export const projects: Project[] = [
     {
         projectTitle: "Reader",
         projectDescription: "Reader is a web app that allows users to join communities & share their interests with others.",
-        projectTags: ["React", "TypeScript", "rsuite"],
+        projectTags: ["React", "TypeScript"],
         githubLink: "https://github.com/hydrarguru/reader",
         websiteLink: "https://reader-app.netlify.app/"
     },
