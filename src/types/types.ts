@@ -6,3 +6,8 @@ export type Project = {
     githubLink: string;
     websiteLink: string;
 }
+
+export type TagStyleOption = {
+    tag: string;
+    style: string;
+};
