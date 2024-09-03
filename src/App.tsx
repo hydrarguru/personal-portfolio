@@ -9,7 +9,7 @@ function App() {
   return (
     <main className="relative w-full p-0 sm:p-5 lg:h-screen">
       <div className="flex h-full w-full flex-wrap justify-between rounded-2xl sm:border lg:divide-x">
-        <div className="w-full p-2 md:p-8 lg:h-full lg:w-2/5 lg:overflow-y-scroll sm:mx-4">
+        <div className="w-full p-2 sm:mx-4 sm:mt-4 md:p-8 lg:h-full lg:w-2/5 lg:overflow-y-scroll">
           <section className="flex w-full flex-col lg:min-h-[calc(100vh-7rem)]">
             <div className="flex items-center justify-between">
               <h1 className="text-2xl font-bold">Henrik Engqvist</h1>
