@@ -4,6 +4,7 @@ import NavbarMenu from "./components/NavigationMenu";
 import ProjectTab from "./components/tabs/ProjectTab";
 import ExperienceTab from "./components/tabs/ExperienceTab";
 import EducationTab from "./components/tabs/EducationTab";
+import { ToggleThemeButton } from "./components/buttons/ToggleThemeButton";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
                 link="https://www.linkedin.com/in/henrik-engqvist/"
               />
               <IconButton icon="email" link="mailto:henrik@engqvist.org" />
+              <ToggleThemeButton />
             </div>
             <div className="text-md my-7 hidden max-w-2xl flex-col space-y-2 rounded text-foreground/70 md:flex">
               <p>
