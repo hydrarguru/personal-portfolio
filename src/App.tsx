@@ -4,20 +4,21 @@ import NavbarMenu from "./components/NavigationMenu";
 import ProjectTab from "./components/tabs/ProjectTab";
 import ExperienceTab from "./components/tabs/ExperienceTab";
 import EducationTab from "./components/tabs/EducationTab";
+import { ToggleThemeButton } from "./components/buttons/ToggleThemeButton";
 
 function App() {
   return (
     <main className="relative w-full p-0 sm:p-5 lg:h-screen">
       <div className="flex h-full w-full flex-wrap justify-between rounded-2xl sm:border lg:divide-x">
-        <div className="w-full p-2 md:p-8 lg:h-full lg:w-2/5 lg:overflow-y-scroll">
+        <div className="w-full p-2 sm:mx-4 sm:mt-4 md:p-8 lg:h-full lg:w-2/5 lg:overflow-y-scroll">
           <section className="flex w-full flex-col lg:min-h-[calc(100vh-7rem)]">
-            <div className="mt-6 flex items-center justify-between">
+            <div className="flex items-center justify-between">
               <h1 className="text-2xl font-bold">Henrik Engqvist</h1>
             </div>
             <h3 className="mt-2 text-lg">Frontend Developer</h3>
-            <p className="my-6 max-w-2xl text-foreground/80">
+            <p className="my-4 max-w-2xl text-foreground/80">
               Hey 👋 I'm Henrik, a Frontend Developer with a focus around UX &
-              accessibility, with previous experience around{" "}
+              accessibility, with previous experience with{" "}
               <span className="font-semibold text-foreground">
                 software development
               </span>{" "}
@@ -39,6 +40,7 @@ function App() {
                 link="https://www.linkedin.com/in/henrik-engqvist/"
               />
               <IconButton icon="email" link="mailto:henrik@engqvist.org" />
+              <ToggleThemeButton />
             </div>
             <div className="text-md my-7 hidden max-w-2xl flex-col space-y-2 rounded text-foreground/70 md:flex">
               <p>
