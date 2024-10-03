@@ -5,6 +5,7 @@ import ProjectTab from "./components/tabs/ProjectTab";
 import ExperienceTab from "./components/tabs/ExperienceTab";
 import EducationTab from "./components/tabs/EducationTab";
 import { ToggleThemeButton } from "./components/buttons/ToggleThemeButton";
+import LinkToolTip  from "./components/buttons/LinkToolTip";
 
 function App() {
   return (
@@ -33,13 +34,18 @@ function App() {
               where I'm sharpening my web dev skills.
             </p>
             <div className="flex flex-wrap items-center gap-2">
-              <LinkButton link="#" text="Resume" />
-              <IconButton icon="github" link="https://github.com/hydrarguru" />
-              <IconButton
-                icon="linkedin"
-                link="https://www.linkedin.com/in/henrik-engqvist/"
-              />
-              <IconButton icon="email" link="mailto:henrik@engqvist.org" />
+              <LinkToolTip link="#">
+                <LinkButton link="#" text="Resume" />
+              </LinkToolTip>
+              <LinkToolTip link="https://github.com/hydrarguru">
+                <IconButton icon="github" link="https://github.com/hydrarguru" />
+              </LinkToolTip>
+              <LinkToolTip link="https://www.linkedin.com/in/henrik-engqvist/">
+                <IconButton icon="linkedin" link="https://www.linkedin.com/in/henrik-engqvist/" />
+              </LinkToolTip>
+              <LinkToolTip link="mailto:henrik@engqvist.org">
+                <IconButton icon="email" link="mailto:henrik@engqvist.org" />
+              </LinkToolTip>
               <ToggleThemeButton />
             </div>
             <div className="text-md my-7 hidden max-w-2xl flex-col space-y-2 rounded text-foreground/70 md:flex">
