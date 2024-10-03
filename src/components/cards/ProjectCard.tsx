@@ -20,7 +20,7 @@ function ProjectCard({
   youtubeLink,
 }: ProjectCardProps) {
   return (
-    <div className="flex justify-between gap-2 overflow-hidden rounded-xl border p-3">
+    <div className="flex justify-between gap-2 overflow-hidden rounded-xl border p-3 hover:border-blue-700 transition duration-300 ease-in-out">
       <div className="tablet:w-3/5 w-full space-y-2">
         <a className="group/link space-y-2">
           <div className="inline-flex items-center gap-1">
