@@ -47,7 +47,7 @@ function EducationCard({
   image,
 }: EducationCardProps) {
   return (
-    <div className="flex justify-between gap-2 overflow-hidden rounded-xl border p-3">
+    <div className="flex justify-between gap-2 overflow-hidden rounded-xl border p-3 hover:border-green-700 transition duration-300 ease-in-out">
       <div className="tablet:w-3/5 w-full space-y-2">
         <a className="group/link space-y-2">
           <div className="flex items-center justify-between">
