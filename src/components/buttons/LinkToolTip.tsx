@@ -12,7 +12,7 @@ type LinkToolTipProps = {
 
 function LinkToolTip({ link, children }: LinkToolTipProps) {
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={400}>
       <Tooltip>
         <TooltipTrigger>{children}</TooltipTrigger>
         <TooltipContent>
