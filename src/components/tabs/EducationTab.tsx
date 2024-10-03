@@ -14,6 +14,7 @@ function EducationTab() {
             associatedProjects={education.associatedProjects}
             startDate={education.startDate}
             endDate={education.endDate}
+            image={education.image}
           />
         ))}
       </section>
