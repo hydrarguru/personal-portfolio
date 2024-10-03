@@ -25,7 +25,6 @@ function ProjectTab() {
   }
 
   function handleSearch(searchTerm: string) {
-    console.log('Search Term: ', searchTerm);
     if (searchTerm.length === 0) {
       setSearchResults(projectData);
       return;
