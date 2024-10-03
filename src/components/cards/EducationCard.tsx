@@ -6,6 +6,7 @@ import {
 } from '@/components/ui/accordion';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Separator } from '../ui/separator';
 
 interface EducationCardProps {
   educationTitle: string;
@@ -59,6 +60,7 @@ function EducationCard({
             </h1>
             <span className="">{`${startDate} - ${endDate}`}</span>
           </div>
+          <Separator />
           <p className="text-md max-w-4xl text-muted-foreground">
             {educationDescription}
           </p>
