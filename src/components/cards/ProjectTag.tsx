@@ -9,6 +9,10 @@ const Tags: TagStyleOption[] = [
   { tag: "Express.js", style: "bg-violet-500 text-white" },
   { tag: "MySQL", style: "bg-orange-500 text-white" },
   { tag: "Chart.js", style: "bg-pink-500 text-white" },
+  { tag: "C#", style: "bg-violet-900 text-white" },
+  { tag: "C++", style: "bg-blue-900 text-white" },
+  { tag: "Unity Engine", style: "bg-zinc-600 text-white" },
+  { tag: "Unreal Engine", style: "bg-zinc-600 text-white" },
 ];
 
 interface ProjectTagProps {
