@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 
 type IconButtonProps = {
   icon: string;
-  link: string;
+  link?: string;
   handleClick?: () => void;
 };
 
