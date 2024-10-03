@@ -5,6 +5,7 @@ export type Project = {
     projectDate?: string;
     githubLink: string;
     websiteLink: string;
+    youtubeLink?: string;
 }
 
 export type TagStyleOption = {
