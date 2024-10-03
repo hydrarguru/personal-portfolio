@@ -45,7 +45,7 @@ function ProjectCard({
 
         {/* Buttons */}
         <div className="flex flex-wrap items-center gap-2">
-          <IconButton icon="github" link={githubLink} />
+          { githubLink && <IconButton icon="github" link={githubLink} />}
           { websiteLink && <IconButton icon="globe" link={websiteLink} /> }
         </div>
       </div>
