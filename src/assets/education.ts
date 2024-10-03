@@ -19,7 +19,7 @@ export const educations: Education[] = [
         associatedProjects: ['CoinCompass', 'Reader', 'OGLe', 'J.A.T. (Job Application Tracker)'],
         startDate: 'Aug 2023',
         endDate: "Jun 2025",
-        image: '../../public/images/ithogskolan.jpg'
+        image: '../images/ithogskolan.jpg'
     },
     {
         educationTitle: "FutureGames",
@@ -42,6 +42,6 @@ export const educations: Education[] = [
         associatedProjects: ['Fennec Peak', 'Dayspring', 'Summit'],
         startDate: 'Aug 2018',
         endDate: "Nov 2020",
-        image: '../../public/images/futuregames.jpg'
+        image: '../images/futuregames.jpg'
     }
 ];
