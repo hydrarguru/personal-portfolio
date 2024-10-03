@@ -7,6 +7,7 @@ interface ProjectCardProps {
   projectTags: string[];
   githubLink: string;
   websiteLink: string;
+  youtubeLink: string;
 }
 
 function ProjectCard({
@@ -15,6 +16,7 @@ function ProjectCard({
   projectTags,
   githubLink,
   websiteLink,
+  youtubeLink
 }: ProjectCardProps) {
   return (
     <div className="flex justify-between gap-2 overflow-hidden rounded-xl border p-3">
@@ -45,8 +47,9 @@ function ProjectCard({
 
         {/* Buttons */}
         <div className="flex flex-wrap items-center gap-2">
-          <IconButton icon="github" link={githubLink} />
+          { githubLink && <IconButton icon="github" link={githubLink} />}
           { websiteLink && <IconButton icon="globe" link={websiteLink} /> }
+          { youtubeLink && <IconButton icon="youtube" link={youtubeLink} /> }
         </div>
       </div>
     </div>

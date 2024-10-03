@@ -10,8 +10,9 @@ function ProjectTab() {
           projectTitle={project.projectTitle}
           projectDescription={project.projectDescription}
           projectTags={project.projectTags}
-          githubLink={project.githubLink}
-          websiteLink={project.websiteLink}
+          githubLink={project.githubLink || ""}
+          websiteLink={project.websiteLink || ""}
+          youtubeLink={project.youtubeLink || ""}
         />
       ))}
     </section>

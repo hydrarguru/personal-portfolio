@@ -1,6 +1,6 @@
 import IconButton from "./components/buttons/IconButton";
 import LinkButton from "./components/buttons/LinkButton";
-import NavbarMenu from "./components/NavigationMenu";
+import NavbarMenu from "./components/nav/NavigationMenu";
 import ProjectTab from "./components/tabs/ProjectTab";
 import ExperienceTab from "./components/tabs/ExperienceTab";
 import EducationTab from "./components/tabs/EducationTab";

@@ -3,8 +3,9 @@ export type Project = {
     projectDescription: string;
     projectTags: string[];
     projectDate?: string;
-    githubLink: string;
-    websiteLink: string;
+    githubLink?: string;
+    websiteLink?: string;
+    youtubeLink?: string;
 }
 
 export type TagStyleOption = {
