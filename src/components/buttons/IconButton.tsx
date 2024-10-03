@@ -6,14 +6,16 @@ import {
   ExclamationTriangleIcon,
   VideoIcon
 } from "@radix-ui/react-icons";
+import { Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 type IconButtonProps = {
   icon: string;
-  link: string;
+  link?: string;
+  handleClick?: () => void;
 };
 
-function IconButton({ icon, link }: IconButtonProps) {
+function IconButton({ icon, link, handleClick }: IconButtonProps) {
   switch (icon) {
     case "github":
       return (
@@ -63,6 +65,13 @@ function IconButton({ icon, link }: IconButtonProps) {
           onClick={() => window.open(link, "_blank")}
         >
           <VideoIcon className="h-4 w-4" />
+        </Button>
+      );
+    
+    case "filter":
+      return (
+        <Button variant="outline" size="icon" onClick={handleClick}>
+          <Filter strokeWidth={'1.75px'} size={15} />
         </Button>
       );
 

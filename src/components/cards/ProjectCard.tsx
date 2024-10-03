@@ -1,5 +1,6 @@
 import IconButton from "../buttons/IconButton";
 import ProjectTag from "./ProjectTag";
+import LinkToolTip from "../buttons/LinkToolTip";
 
 interface ProjectCardProps {
   projectTitle: string;
@@ -16,7 +17,7 @@ function ProjectCard({
   projectTags,
   githubLink,
   websiteLink,
-  youtubeLink
+  youtubeLink,
 }: ProjectCardProps) {
   return (
     <div className="flex justify-between gap-2 overflow-hidden rounded-xl border p-3">
@@ -27,29 +28,36 @@ function ProjectCard({
               <h1 className="font-heading text-xl font-semibold">
                 {projectTitle}
               </h1>
-              {/*
-                <span className="rounded bg-secondary px-2 py-1 text-xs">
-                  {projectDate}
-                </span> 
-                */}
             </div>
           </div>
-          <p className="max-w-4xl text-md text-muted-foreground">
+          <p className="text-md max-w-4xl text-muted-foreground">
             {projectDescription}
           </p>
         </a>
         {/* Tags */}
         <div className="flex flex-wrap items-center gap-2">
           {projectTags.map((tag) => (
-            <ProjectTag key={tag} tagLabel={tag}/>
+            <ProjectTag key={tag} tagLabel={tag} />
           ))}
         </div>
 
         {/* Buttons */}
         <div className="flex flex-wrap items-center gap-2">
-          { githubLink && <IconButton icon="github" link={githubLink} />}
-          { websiteLink && <IconButton icon="globe" link={websiteLink} /> }
-          { youtubeLink && <IconButton icon="youtube" link={youtubeLink} /> }
+          {githubLink && (
+            <LinkToolTip link={githubLink}>
+              <IconButton icon="github" link={githubLink} />
+            </LinkToolTip>
+          )}
+          {websiteLink && (
+            <LinkToolTip link={websiteLink}>
+              <IconButton icon="globe" link={websiteLink} />
+            </LinkToolTip>
+          )}
+          {youtubeLink && (
+            <LinkToolTip link={youtubeLink}>
+              <IconButton icon="youtube" link={youtubeLink} />
+            </LinkToolTip>
+          )}
         </div>
       </div>
     </div>

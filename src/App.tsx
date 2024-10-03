@@ -83,7 +83,7 @@ function App() {
             </div>
           </section>
         </div>
-        <div className="relative mx-auto mt-3 w-full max-w-4xl p-2 md:p-8 lg:mt-0 lg:h-full lg:w-3/5 lg:overflow-y-scroll">
+        <div className="relative mt-3 w-full max-w-4xl p-2 md:p-8 lg:mt-0 lg:h-full lg:w-3/5 lg:overflow-y-scroll">
           <NavbarMenu
             projectSection={<ProjectTab />}
             experienceSection={<ExperienceTab />}
