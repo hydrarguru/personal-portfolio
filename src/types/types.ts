@@ -15,6 +15,7 @@ export type Education = {
     associatedProjects: string[];
     startDate: string;
     endDate: string;
+    image?: string;
 }
 
 export type TagStyleOption = {

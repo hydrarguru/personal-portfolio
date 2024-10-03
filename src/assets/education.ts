@@ -1,9 +1,11 @@
 import { Education } from "@/types/types";
 
+
+
 export const educations: Education[] = [
     {
         educationTitle: "IT-Högskolan",
-        educationDescription: "it-högskolan beskrivning",
+        educationDescription: "IT-Högskolan is a two-year higher vocational education in web development. The education is aimed at those who want to work with web development and who have a great interest in programming and design.",
         curriculum: [
             "HTML & CSS",
             "Native JavaScript",
@@ -16,11 +18,12 @@ export const educations: Education[] = [
         ],
         associatedProjects: ['CoinCompass', 'Reader', 'OGLe', 'J.A.T. (Job Application Tracker)'],
         startDate: 'Aug 2023',
-        endDate: "Jun 2025"
+        endDate: "Jun 2025",
+        image: '../../public/images/ithogskolan.jpg'
     },
     {
         educationTitle: "FutureGames",
-        educationDescription: "futuregames beskrivning",
+        educationDescription: "FutureGames is a higher vocational education in game development. The education is a two-year full-time education in game programming and game graphics. The education is aimed at those who want to work with game development and who have a great interest in programming and graphics.",
         curriculum: [
         "Game programming with C#",
         "3D mathematics for game development",
@@ -38,6 +41,7 @@ export const educations: Education[] = [
         ],
         associatedProjects: ['Fennec Peak', 'Dayspring', 'Summit'],
         startDate: 'Aug 2018',
-        endDate: "Nov 2020"
+        endDate: "Nov 2020",
+        image: '../../public/images/futuregames.jpg'
     }
 ];
