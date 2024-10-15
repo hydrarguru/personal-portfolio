@@ -16,9 +16,9 @@ function App() {
             <div className="flex items-center justify-between">
               <h1 className="text-2xl font-bold">Henrik Engqvist</h1>
             </div>
-            <h3 className="mt-2 text-base italic">Frontend Developer, with added bonus of being obsessed with 📜 history and 🗺️ maps.</h3>
+            <h3 className="mt-2 text-base italic">Frontend Developer, lover of 📜 ancient history and 🗺️ maps, 🖋️ fountain pens & ink.</h3>
             <p className="my-4 max-w-2xl text-foreground/100">
-              Hey 👋 I'm Henrik, a Frontend Developer with a focus around UX &
+              Hey 👋 I'm Henrik, a Frontend Developer focusing on UX &
               accessibility, with previous experience with{" "}
               <span className="font-semibold text-foreground">
                 software development
