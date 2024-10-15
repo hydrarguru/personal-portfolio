@@ -34,7 +34,7 @@ function App() {
               where I'm sharpening my web dev skills.
             </p>
             <div className="flex flex-wrap items-center gap-2">
-              <LinkToolTip link="#">
+              <LinkToolTip link="Not available at this moment.">
                 <LinkButton link="#" text="Resume" />
               </LinkToolTip>
               <LinkToolTip link="https://github.com/hydrarguru">
