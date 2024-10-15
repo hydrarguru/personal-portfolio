@@ -16,8 +16,8 @@ function App() {
             <div className="flex items-center justify-between">
               <h1 className="text-2xl font-bold">Henrik Engqvist</h1>
             </div>
-            <h3 className="mt-2 text-lg">Frontend Developer</h3>
-            <p className="my-4 max-w-2xl text-foreground/80">
+            <h3 className="mt-2 text-base italic">Frontend Developer, with added bonus of being obsessed with 📜 history and 🗺️ maps.</h3>
+            <p className="my-4 max-w-2xl text-foreground/100">
               Hey 👋 I'm Henrik, a Frontend Developer with a focus around UX &
               accessibility, with previous experience with{" "}
               <span className="font-semibold text-foreground">
@@ -48,40 +48,41 @@ function App() {
               </LinkToolTip>
               <ToggleThemeButton />
             </div>
-            <div className="text-md my-7 hidden max-w-2xl flex-col space-y-2 rounded text-foreground/70 md:flex">
+            <div className="text-md my-7 hidden max-w-2xl flex-col space-y-2 rounded text-foreground/100 md:flex">
+              <h2 className="text-lg">Currently learning: <span className="font-semibold">{`🦀 Rust 🦀`}</span></h2>
               <p>
-                <span className="font-semibold text-primary/90">
+                <span className="text-primary/90">
                   Frontend:{" "}
                 </span>
-                React.js, Next.js, Vue.js, TailwindCSS.
+                <span className="font-semibold">React.js</span>, Next.js, Vue.js, <span className="font-semibold">TailwindCSS</span>.
               </p>
 
               <p>
-                <span className="font-semibold text-primary/90">Backend: </span>
-                Express.js, MongoDB, Firebase.
+                <span className="text-primary/90">Backend: </span>
+                Express.js, PostgreSQL, <span className="font-semibold">MySQL</span>, MongoDB, Firebase.
               </p>
 
               <p>
-                <span className="font-semibold text-primary/90">
+                <span className="text-primary/90">
                   Languages:{" "}
                 </span>
-                JavaScript/TypeScript, C#, C++, SQL, HTML & CSS.
+                <span className="font-semibold">JavaScript</span>, <span className="font-semibold">TypeScript</span>, C#, C++, SQL, <span className="font-semibold">HTML & CSS</span>.
               </p>
 
               <p>
-                <span className="font-semibold text-primary/90">
+                <span className="text-primary/90">
                   Game Engines:{" "}
                 </span>
                 Unity Engine, Unreal Engine.
               </p>
 
               <p>
-                <span className="font-semibold text-primary/90">Tools: </span>
-                Git, JIRA, Figma, Node.js, Bun, Docker.
+                <span className="text-primary/90">Tools: </span>
+                <span className="font-semibold">Git</span>, JIRA, Figma, <span className="font-semibold">Node.js</span>, GitHub Actions, Bun, Docker.
               </p>
 
               <p>
-                <span className="font-semibold text-primary/90">
+                <span className="text-primary/90">
                   Agile methods:{" "}
                 </span>
                 Scrum, Kanban.
