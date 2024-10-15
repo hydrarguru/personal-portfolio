@@ -2,13 +2,6 @@ import { Project } from "@/types/types";
 
 export const projects: Project[] = [
     {
-        projectTitle: "CoinCompass",
-        projectDescription: "CoinCompass is a web application with the goal of helping you save money by tracking your expenses.",
-        projectTags: ["Vue", "TypeScript", "Firebase"],
-        githubLink: "https://github.com/ITHS-Team8/CoinCompass",
-        websiteLink: "https://coincompass.netlify.app/"
-    },
-    {
         projectTitle: "Reader",
         projectDescription: "Reader is a web app that allows users to join communities & share their interests with others.",
         projectTags: ["React", "TypeScript"],
@@ -20,7 +13,14 @@ export const projects: Project[] = [
         projectDescription: "Reader API is the backend that powers the Reader web app.",
         projectTags: ["TypeScript", "Bun", "Express.js", "MySQL"],
         githubLink: "https://github.com/hydrarguru/reader-backend",
-        websiteLink: ""
+        websiteLink: "https://reader-backend-oank.onrender.com"
+    },
+    {
+        projectTitle: "CoinCompass",
+        projectDescription: "CoinCompass is a web application with the goal of helping you save money by tracking your expenses.",
+        projectTags: ["Vue", "TypeScript", "Firebase"],
+        githubLink: "https://github.com/ITHS-Team8/CoinCompass",
+        websiteLink: "https://coincompass.netlify.app/"
     },
     {
         projectTitle: "OGLe (Online Game Library)",
