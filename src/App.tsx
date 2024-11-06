@@ -59,7 +59,7 @@ function App() {
 
               <p>
                 <span className="text-primary/90">Backend: </span>
-                Express.js, PostgreSQL, <span className="font-semibold">MySQL</span>, MongoDB, Firebase.
+                Express.js, Hono, PostgreSQL, <span className="font-semibold">MySQL</span>, MongoDB, Firebase.
               </p>
 
               <p>
