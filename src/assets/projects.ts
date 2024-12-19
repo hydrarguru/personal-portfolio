@@ -13,7 +13,7 @@ export const projects: Project[] = [
         projectDescription: "Reader API is the backend that powers the Reader web app.",
         projectTags: ["TypeScript", "Bun", "Express.js", "MySQL"],
         githubLink: "https://github.com/hydrarguru/reader-backend",
-        websiteLink: "https://reader-backend-oank.onrender.com"
+        websiteLink: "https://reader-api.fly.dev/"
     },
     {
         projectTitle: "CoinCompass",
