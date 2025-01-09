@@ -1,7 +1,6 @@
 import { useState, useCallback } from "react";
 import { debounce } from "lodash";
 import { Input } from "@/components/ui/input";
-import IconButton from "../buttons/IconButton";
 
 interface SearchBarProps {
   onSearch: (searchTerm: string) => void;
@@ -32,7 +31,6 @@ function SearchBar({ onSearch }: SearchBarProps) {
         onChange={handleChange}
         autoComplete="false"
       />
-      <IconButton icon="filter" />
     </div>
   );
 }
