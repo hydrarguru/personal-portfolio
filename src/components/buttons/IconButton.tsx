@@ -4,7 +4,9 @@ import {
   LinkedInLogoIcon,
   GlobeIcon,
   ExclamationTriangleIcon,
-  VideoIcon
+  VideoIcon,
+  GridIcon,
+  RowsIcon,
 } from "@radix-ui/react-icons";
 import { Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -74,6 +76,19 @@ function IconButton({ icon, link, handleClick }: IconButtonProps) {
           <Filter strokeWidth={'1.75px'} size={15} />
         </Button>
       );
+
+    case "grid":
+        return (
+            <Button variant="outline" size="icon" onClick={handleClick}>
+                <GridIcon strokeWidth={'1.75px'} size='15' />
+            </Button>
+        );
+    case "rows":
+        return (
+            <Button variant="outline" size="icon" onClick={handleClick}>
+                <RowsIcon strokeWidth={'1.75px'} size='15' />
+            </Button>
+        );
 
     default:
       return (
