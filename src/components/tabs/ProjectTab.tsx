@@ -7,7 +7,7 @@ import ProjectCard from "../cards/ProjectCard";
 import SearchBar from "../nav/SearchBar";
 import IconButton from "../buttons/IconButton";
 
-
+type ViewType = "rows" | "grid";
 
 function ProjectTab() {
   const [projectData, setProjectData] = useState<Project[]>([]);
@@ -15,9 +15,10 @@ function ProjectTab() {
   const [viewType, setViewType] = useState<string>("rows");
 
   useEffect(() => {
+    localStorage.setItem("projectTabView", viewType);
     setProjectData(projects);
     setSearchResults(projects);
-  }, []);
+  }, [viewType]);
 
   function filterProjects(searchTerm: string) {
     const results = projectData.filter((project) => {
@@ -26,13 +27,26 @@ function ProjectTab() {
     setSearchResults(results);
   }
 
-  function handleViewChange() {
-    if (viewType === "rows") {
-      setViewType("grid");
+  function setProjectTabView(view: ViewType) {
+    setViewType(view);
+    const fetchedView = localStorage.getItem("projectTabView");
+    if (fetchedView) {
+      if(fetchedView === "grid") {
+        localStorage.setItem("projectTabView", "rows");
+        console.log("Setting view to rows");
+      }
+      else {
+        localStorage.setItem("projectTabView", "grid");
+        console.log("Setting view to grid");
+      }
     }
     else {
-      setViewType("rows");
+      console.error("Error: Local storage not available");
     }
+  }
+
+  function handleViewChange(view: ViewType) {
+    setProjectTabView(view);
   }
 
   function handleSearch(searchTerm: string) {
@@ -51,9 +65,9 @@ function ProjectTab() {
         <SearchBar onSearch={handleSearch}/>
         {
           viewType === "rows" ? (
-            <IconButton icon="grid" handleClick={handleViewChange} />
+            <IconButton icon="grid" handleClick={()=> handleViewChange("grid")} />
           ) : (
-            <IconButton icon="rows" handleClick={handleViewChange} />
+            <IconButton icon="rows" handleClick={()=> handleViewChange("rows")} />
           )
         }
       </div>
