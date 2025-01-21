@@ -4,7 +4,9 @@ import {
   LinkedInLogoIcon,
   GlobeIcon,
   ExclamationTriangleIcon,
-  VideoIcon
+  VideoIcon,
+  GridIcon,
+  RowsIcon,
 } from "@radix-ui/react-icons";
 import { Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -20,6 +22,7 @@ function IconButton({ icon, link, handleClick }: IconButtonProps) {
     case "github":
       return (
         <Button
+          type={'button'}
           variant="outline"
           size="icon"
           onClick={() => window.open(link, "_blank")}
@@ -30,6 +33,7 @@ function IconButton({ icon, link, handleClick }: IconButtonProps) {
     case "email":
       return (
         <Button
+            type={'button'}
           variant="outline"
           size="icon"
           onClick={() => window.open(link, "_self")}
@@ -40,6 +44,7 @@ function IconButton({ icon, link, handleClick }: IconButtonProps) {
     case "linkedin":
       return (
         <Button
+            type={'button'}
           variant="outline"
           size="icon"
           onClick={() => window.open(link, "_blank")}
@@ -50,6 +55,7 @@ function IconButton({ icon, link, handleClick }: IconButtonProps) {
     case "globe":
       return (
         <Button
+            type={'button'}
           variant="outline"
           size="icon"
           onClick={() => window.open(link, "_blank")}
@@ -60,6 +66,7 @@ function IconButton({ icon, link, handleClick }: IconButtonProps) {
     case "youtube":
       return (
         <Button
+            type={'button'}
           variant="outline"
           size="icon"
           onClick={() => window.open(link, "_blank")}
@@ -70,14 +77,27 @@ function IconButton({ icon, link, handleClick }: IconButtonProps) {
     
     case "filter":
       return (
-        <Button variant="outline" size="icon" onClick={handleClick}>
+        <Button type={'button'} variant="outline" size="icon" onClick={handleClick}>
           <Filter strokeWidth={'1.75px'} size={15} />
         </Button>
       );
 
+    case "grid":
+        return (
+            <Button type={'button'} variant="outline" size="icon" onClick={handleClick}>
+                <GridIcon strokeWidth={'1.75px'} size='15' />
+            </Button>
+        );
+    case "rows":
+        return (
+            <Button type={'button'} variant="outline" size="icon" onClick={handleClick}>
+                <RowsIcon strokeWidth={'1.75px'} size='15' />
+            </Button>
+        );
+
     default:
       return (
-        <Button variant="outline" size="icon">
+        <Button type={'button'} variant="outline" size="icon">
           <ExclamationTriangleIcon className="h-4 w-4" />
         </Button>
       );

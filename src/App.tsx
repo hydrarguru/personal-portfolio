@@ -34,8 +34,8 @@ function App() {
               where I'm sharpening my web dev skills.
             </p>
             <div className="flex flex-wrap items-center gap-2">
-              <LinkToolTip link="Not available at this moment.">
-                <LinkButton link="#" text="Resume" />
+              <LinkToolTip link="Swedish Resume. English version currently unavailable.">
+                <LinkButton link="../Henrik_Engqvist_CV.pdf" target="_blank" text="Resume" />
               </LinkToolTip>
               <LinkToolTip link="https://github.com/hydrarguru">
                 <IconButton icon="github" link="https://github.com/hydrarguru" />
@@ -54,7 +54,7 @@ function App() {
                 <span className="text-primary/90">
                   Frontend:{" "}
                 </span>
-                <span className="font-semibold">React.js</span>, Next.js, Vue.js, <span className="font-semibold">TailwindCSS</span>.
+                <span className="font-semibold">React</span>, Next.js, Vue, <span className="font-semibold">TailwindCSS</span>.
               </p>
 
               <p>
@@ -90,7 +90,7 @@ function App() {
             </div>
           </section>
         </div>
-        <div className="relative mt-3 w-full max-w-4xl p-2 md:p-8 lg:mt-0 lg:h-full lg:w-3/5 lg:overflow-y-scroll">
+        <div className="relative mt-3 w-full max-w-6xl md:max-w-xl xl:max-w-6xl p-2 md:p-8 lg:mt-0 lg:h-full lg:w-3/5 lg:overflow-y-scroll">
           <NavbarMenu
             projectSection={<ProjectTab />}
             experienceSection={<ExperienceTab />}

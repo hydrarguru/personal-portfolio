@@ -18,6 +18,14 @@ export type Education = {
     image?: string;
 }
 
+export type Experience = {
+    experienceTitle: string;
+    experienceRole: string;
+    experienceDescription: string[];
+    startDate: string;
+    endDate: string;
+}
+
 export type TagStyleOption = {
     tag: string;
     style: string;
