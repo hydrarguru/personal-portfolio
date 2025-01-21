@@ -35,7 +35,7 @@ function App() {
             </p>
             <div className="flex flex-wrap items-center gap-2">
               <LinkToolTip link="Swedish Resume. English version currently unavailable.">
-                <LinkButton link="../Henrik_Engqvist_CV_SWE.pdf" text="Resume" />
+                <LinkButton link="../Henrik_Engqvist_CV.pdf" target="_blank" text="Resume" />
               </LinkToolTip>
               <LinkToolTip link="https://github.com/hydrarguru">
                 <IconButton icon="github" link="https://github.com/hydrarguru" />
