@@ -85,13 +85,13 @@ function IconButton({ icon, link, handleClick }: IconButtonProps) {
     case "grid":
         return (
             <Button type={'button'} variant="outline" size="icon" onClick={handleClick}>
-                <GridIcon strokeWidth={'1.75px'} size='15' />
+                <GridIcon strokeWidth={'1.75px'} />
             </Button>
         );
     case "rows":
         return (
             <Button type={'button'} variant="outline" size="icon" onClick={handleClick}>
-                <RowsIcon strokeWidth={'1.75px'} size='15' />
+                <RowsIcon strokeWidth={'1.75px'} />
             </Button>
         );
 
