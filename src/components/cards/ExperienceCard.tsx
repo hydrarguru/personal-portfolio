@@ -3,7 +3,7 @@ import { Separator } from '../ui/separator';
 interface ExperienceCardProps {
   experienceTitle: string;
   experienceRole: string;
-  experienceDescription: string;
+  experienceDescription: string[];
   startDate: string;
   endDate: string;
   image?: string;
@@ -28,9 +28,13 @@ function ExperienceCard({
             <span className="">{`${startDate} - ${endDate}`}</span>
           </div>
           <Separator />
-          <p className="text-md max-w-4xl text-muted-foreground">
-            {experienceDescription}
-          </p>
+          <ul className="text-lg max-w-4xl text-muted-foreground">
+            {experienceDescription.map((description, index) => (
+              <li key={index} className="list-disc ml-4">
+                {description}
+              </li>
+            ))}
+          </ul>
         </a>
       </div>
     </div>
