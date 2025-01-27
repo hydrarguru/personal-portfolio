@@ -26,7 +26,7 @@ function ProjectTag({ tagLabel }: ProjectTagProps) {
   const tagStyle = Tags.find((tag) => tag.tag === tagLabel) || { style: "bg-secondary" };
 
   return (
-    <p className={`rounded px-2 py-1 text-xs ${tagStyle?.style}`}>
+    <p className={`rounded-md px-2 py-1 text-xs ${tagStyle?.style} border border-neutral-200 border-opacity-50`}>
       {tagLabel}
     </p>
   );
