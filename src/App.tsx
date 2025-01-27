@@ -8,6 +8,7 @@ import LinkToolTip  from "./components/buttons/LinkToolTip";
 import Dropdown from "./components/buttons/Dropdown";
 
 import type { ResumeItem } from "@/types/types";
+import { EmailDropdown } from "./components/buttons/EmailDropdown";
 
 const resumeData: ResumeItem[] = [
   {
@@ -22,6 +23,11 @@ const resumeData: ResumeItem[] = [
     link: '../Henrik_Engqvist_CV_EN.pdf',
     disabled: true,
   },
+];
+
+const emailData = [
+  { label: 'Personal', email: 'henrik@engqvist.org' },
+  { label: 'School', email: 'henrik.engqvist@iths.se' },
 ];
 
 function PersonalBio() {
@@ -48,6 +54,7 @@ function PersonalBio() {
       </p>
       <div className='flex flex-wrap items-center gap-2'>
         <Dropdown label="Resumé" resumeItems={resumeData} />
+        <EmailDropdown emailItems={emailData} />
         <LinkToolTip link='https://github.com/hydrarguru'>
           <IconButton icon='github' link='https://github.com/hydrarguru' />
         </LinkToolTip>
@@ -56,9 +63,6 @@ function PersonalBio() {
             icon='linkedin'
             link='https://www.linkedin.com/in/henrik-engqvist/'
           />
-        </LinkToolTip>
-        <LinkToolTip link='mailto:henrik@engqvist.org'>
-          <IconButton icon='email' link='mailto:henrik@engqvist.org' />
         </LinkToolTip>
         <ToggleThemeButton />
       </div>
