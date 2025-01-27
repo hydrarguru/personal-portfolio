@@ -30,3 +30,15 @@ export type TagStyleOption = {
     tag: string;
     style: string;
 };
+
+export type ResumeItem = {
+    link: string;
+    tooltip: string;
+    text: string;
+    disabled?: boolean;
+};
+
+export type EmailItem = {
+    label: string;
+    email: string;
+};

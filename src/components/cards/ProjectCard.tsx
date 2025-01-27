@@ -20,17 +20,17 @@ function ProjectCard({
   youtubeLink,
 }: ProjectCardProps) {
   return (
-    <div className="flex justify-between gap-2 overflow-hidden rounded-xl border p-3 hover:border-blue-700 transition duration-300 ease-in-out">
-      <div className="tablet:w-3/5 w-full space-y-2">
-        <a className="group/link space-y-2">
+    <div className="flex justify-between gap-2 p-3 overflow-hidden transition duration-300 ease-in-out border rounded-xl hover:border-neutral-50">
+      <div className="w-full space-y-2 tablet:w-3/5">
+        <a className="space-y-2 group/link">
           <div className="inline-flex items-center gap-1">
             <div className="flex flex-wrap items-center gap-2">
-              <h1 className="font-heading text-xl font-semibold">
+              <h1 className="text-xl font-semibold font-heading">
                 {projectTitle}
               </h1>
             </div>
           </div>
-          <p className="text-md max-w-4xl text-muted-foreground">
+          <p className="max-w-4xl text-md text-muted-foreground">
             {projectDescription}
           </p>
         </a>
