@@ -1,10 +1,13 @@
 import { TagStyleOption } from "@/types/types";
 
 const Tags: TagStyleOption[] = [
+  { tag: "HTML", style: "bg-red-500 text-white" },
+  { tag: "CSS", style: "bg-blue-500 text-white" },
   { tag: "React", style: "bg-sky-500 text-white" },
   { tag: "Vue", style: "bg-green-300 text-black" },
   { tag: "TypeScript", style: "bg-blue-500 text-white" },
   { tag: "Firebase", style: "bg-yellow-500 text-black" },
+  { tag: "TailwindCSS", style: "bg-sky-400 text-white" },
   { tag: "Bun", style: "bg-pink-500 text-white" },
   { tag: "Express.js", style: "bg-violet-500 text-white" },
   { tag: "MySQL", style: "bg-orange-500 text-white" },
