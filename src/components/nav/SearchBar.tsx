@@ -23,9 +23,9 @@ function SearchBar({ onSearch }: SearchBarProps) {
   };
 
   return (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center w-full space-x-2">
       <Input
-        className="focus-visible:ring-0 flex-grow"
+        className="flex-grow focus-visible:ring-0"
         type="text"
         placeholder="Search for projects"
         onChange={handleChange}
