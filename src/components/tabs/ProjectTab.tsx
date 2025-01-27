@@ -4,10 +4,52 @@ import { Project } from "../../types/types";
 import { projects } from "@/assets/projects";
 
 import ProjectCard from "../cards/ProjectCard";
+import GridProjectCard from "../cards/GridProjectCard";
 import SearchBar from "../nav/SearchBar";
 import IconButton from "../buttons/IconButton";
 
 type ViewType = "rows" | "grid";
+
+interface ProjectTabProps {
+  projectData: Project[];
+}
+
+function ListProjectView({ projectData }: ProjectTabProps) {
+  return (
+    projectData.map((project) => (
+      <ProjectCard
+        key={project.projectTitle}
+        projectTitle={project.projectTitle}
+        projectDescription={project.projectDescription}
+        projectTags={project.projectTags}
+        githubLink={project.githubLink || ""}
+        websiteLink={project.websiteLink || ""}
+        youtubeLink={project.youtubeLink || ""}
+      />
+    ))
+  );
+}
+
+function GridProjectView({ projectData }: ProjectTabProps) {
+  return (
+    <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+      {
+        projectData.map((project) => (
+          <GridProjectCard
+            key={project.projectTitle}
+            projectTitle={project.projectTitle}
+            projectDescription={project.projectDescription}
+            projectTags={project.projectTags}
+            githubLink={project.githubLink || ""}
+            websiteLink={project.websiteLink || ""}
+            youtubeLink={project.youtubeLink || ""}
+          />
+        ))
+      }
+    </div>
+  );
+}
+
 
 function ProjectTab() {
   const [projectData, setProjectData] = useState<Project[]>([]);
@@ -33,11 +75,9 @@ function ProjectTab() {
     if (fetchedView) {
       if(fetchedView === "grid") {
         localStorage.setItem("projectTabView", "rows");
-        console.log("Setting view to rows");
       }
       else {
         localStorage.setItem("projectTabView", "grid");
-        console.log("Setting view to grid");
       }
     }
     else {
@@ -60,7 +100,7 @@ function ProjectTab() {
   }
   
   return (
-    <section className="mt-5 w-full space-y-6">
+    <section className="w-full mt-5 space-y-6">
       <div className='flex gap-2'>
         <SearchBar onSearch={handleSearch}/>
         {
@@ -72,17 +112,9 @@ function ProjectTab() {
         }
       </div>
       {
-        searchResults.map((project) => (
-          <ProjectCard
-            key={project.projectTitle}
-            projectTitle={project.projectTitle}
-            projectDescription={project.projectDescription}
-            projectTags={project.projectTags}
-            githubLink={project.githubLink || ""}
-            websiteLink={project.websiteLink || ""}
-            youtubeLink={project.youtubeLink || ""}
-          />
-        ))
+        viewType === "rows" ? 
+          <ListProjectView projectData={searchResults} /> :
+          <GridProjectView projectData={searchResults} />
       }
     </section>
   );
