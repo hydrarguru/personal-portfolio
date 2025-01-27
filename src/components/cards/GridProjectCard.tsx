@@ -10,7 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-
 interface GridProjectCardProps {
   projectTitle: string;
   projectDescription: string;
@@ -29,23 +28,23 @@ function GridProjectCard({
   youtubeLink,
 }: GridProjectCardProps) {
   return (
-    <Card className='transition duration-300 ease-in-out hover:border-neutral-50'>
-      <CardHeader>
-        <CardTitle className='text-2xl'>{projectTitle}</CardTitle>
-        <CardDescription className='text-xl'>
-            {projectDescription.length > 100
-              ? projectDescription.substring(0, 100) + '...'
-              : projectDescription}
-  </CardDescription>
+    <Card className='flex flex-col h-full transition duration-300 ease-in-out hover:border-neutral-50'>
+      <CardHeader className='flex-grow'>
+        <CardTitle className='text-3xl text-center'>{projectTitle}</CardTitle>
+        <CardDescription className='text-lg italic'>
+          {projectDescription.length > 100
+            ? projectDescription.substring(0, 100) + '...'
+            : projectDescription}
+        </CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className='flex-grow'>
         <div className='flex flex-wrap items-center gap-2'>
           {projectTags.map((tag) => (
             <ProjectTag key={tag} tagLabel={tag} />
           ))}
         </div>
       </CardContent>
-      <CardFooter>
+      <CardFooter className='mt-auto'>
         <div className='flex flex-wrap items-center gap-2'>
           {githubLink && (
             <LinkToolTip link={githubLink}>
