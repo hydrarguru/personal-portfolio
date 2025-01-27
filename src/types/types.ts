@@ -37,3 +37,8 @@ export type ResumeItem = {
     text: string;
     disabled?: boolean;
 };
+
+export type EmailItem = {
+    label: string;
+    email: string;
+};
